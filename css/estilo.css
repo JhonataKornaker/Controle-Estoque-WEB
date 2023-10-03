@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    height: 100vh;
+    padding: 15px;
+    margin: auto 0;
+    border: 1px solid;
+    background-color: rgb(158, 136, 179);
+}
+.container {
+    display: inline-block;
+    position: relative;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 600px;
+    background-color: rgb(211, 197, 215);
+    overflow: auto;
+}
+h1 {
+    color: white;
+}
+#campoPesquisa input {
+    border: 1px solid;
+    padding: 2px;
+    width: 500px;
+    padding-left: 30px;
+}
+#campoPesquisa {
+    display: inline-block; /*Adaptar de acordo com o seu conteiner pai*/
+    position: relative;
+    border: 1px solid;
+}
+.input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #555;
+}
+#listaProdutos {
+    display: flex;
+    border: 5px solid black;
+    margin-top: 20px;
+    height: 200px;
+    overflow: hidden;
+}
+#imagem {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: 100%; /* A imagem ocupa 100% da altura do contêiner */
+    object-fit: cover; /* Mantém a proporção original da imagem e a ajusta para cobrir todo o contêiner */
+}
+#containerImg {
+    margin: 2px;
+    padding: 2px;
+    flex-grow: 0; /*Ocupar espaço dentro do container flexivel*/
+
+}
+#containerInfo {
+    position: relative;
+    margin: 2px;
+    flex-grow: 1;
+}
+.info {
+    position: relative;
+    top: 30px;
+    border: 1px solid;
+    background-color: white;
+    width: 350px;
+    margin: 15px;
+    text-align: left;
+    padding-left: 5px;
+}
+#btnExcluir {
+    position: absolute;
+    background-color: rgb(211, 197, 215);
+    top: 10px;
+    right: 10px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+#btnEditar {
+    position: absolute;
+    background-color: rgb(211, 197, 215);
+    top: 10px;
+    right: 40px;
+    border: none;
+    font-size: 24px;
+    cursor: pointer; /*Muda o mouse para uma maozinha*/
+}
+#btnCadastro {
+    position: absolute;
+    border-radius: 30px;
+    left: 400px;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 30px;
+    width: 150px; /* Largura do elemento */
+    height: 30px; /* Altura do elemento */
+    padding-left: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #000000;
+    cursor: pointer;
+}
+.listaVazia {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Centralizar horizontalmente*/
+    font-size: 48px;
+    color: white;
+}

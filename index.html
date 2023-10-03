@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Principal</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="JS/script-crud.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Produtos</h1>
+
+        <div id="campoPesquisa">
+            <input type="text" placeholder="Pesquisar"/>
+            <i class="fa fa-search input-icon"></i>
+        </div>
+
+    <div id="listaProdutos">
+            <div id="containerImg">
+                <img id="imagem" src="Imagens/img2_padrao.png"/>
+            </div>
+            <div id="containerInfo">
+                <button id="btnExcluir">
+                    <i class="fa fa-trash"></i>
+                </button>
+                <button id="btnEditar" onclick="abrirPaginaEdicao()">
+                    <i class="fa fa-pencil"></i>
+                </button>
+                <div class="info" id="txtNome">Nome:</div>
+                <div class="info" id="txtQtd">Quantidade:</div>
+                <div class="info" id="txtLocal">Local:</div>
+                <div class="info" id="txtCategoria">Categoria:</div>
+            </div>
+        </div> 
+
+        <a href="Cadastro.html">
+            <button id="btnCadastro">
+                Novo Produto
+                <i class="fa fa-plus btn-icon" style="font-size: 24px;"></i>
+            </button>
+        </a>    
+    </div>
+    
+</body>
+</html>

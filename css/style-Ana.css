@@ -1,0 +1,33 @@
+body {
+    text-align: center;
+    background-color: rgb(158, 136, 179);
+}
+
+#corpo {
+    display: inline-block;
+    position: relative;
+    border-radius: 15px;
+    padding: 5px;
+    text-align: center;
+    width: 600px;
+    background-color: rgb(211, 197, 215);
+    height: 600px;
+}
+
+#image {
+    width: 350px;
+}
+#btnSalv {
+    width: 200px;
+    height: 25px;
+    border-radius:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+.campos {
+    margin: 0 auto;
+    width: 400px;
+    height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
